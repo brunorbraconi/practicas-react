@@ -27,13 +27,11 @@ let cards = [movies, awards, actors];
 function ContentRowMovies() {
   return (
     <React.Fragment>
-      {/* <!-- Content Row Movies--> */}
       <div className="row">
         {cards.map((dataCard, index) => {
           return <Cards {...dataCard} key={dataCard + index} />;
         })}
       </div>
-      {/* <!-- End movies in Data Base --> */}
     </React.Fragment>
   );
 }
